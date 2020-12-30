@@ -12,8 +12,8 @@ class Storage {
         this.items.push(item);
     }
     removeItem(item) { 
-        item = this.items.indexOf(item);
-        this.items.splice(item,1);
+        const index = this.items.indexOf(item);
+        this.items.splice(index,1);
     }
 }
 const storage = new Storage([
